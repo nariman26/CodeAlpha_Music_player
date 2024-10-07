@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="style1.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- start header-->
+<header>
+	<div class="top_section">
+		<h5>Music Player&nbsp;&nbsp;<i class='bx bxs-music'></i></h5>
+	</div>
+</header>
+<!-- end header-->
+<mian>
+
+	<div class="container">
+		<div class="top_part">
+			<i  id="heart" class='bx bxs-heart'></i>
+			<i id="searchBar" class='bx bx-search'></i>
+		</div>
+
+		<div class="cover_imge">
+			<img src="images/1.jpg" alt=" ">
+		</div>
+		<div class="player_body">
+			<div class="info">
+                 <h2 class="name">.. Song Title ..</h2>
+				 <h3 class="artist">" Artist [NST] "</h3>
+			</div>
+			<div class="main_audio">
+				<div class="audio_part">
+					<audio src=""></audio>
+				</div>
+				<div class="timer">
+					<span class="current_time">0:00</span>
+					<span class="end_time">0:00</span>
+				</div>
+				<audio  id="main_audio" src=""></audio>
+			</div>
+
+			<div class="controls">
+			<i  id="prev" class='bx bx-skip-previous'></i>&nbsp;
+			<div class="play">
+		    <i  id="PlayButton" class='bx bx-play'></i>&nbsp;
+		    </div>
+			<i  id="next" class='bx bx-skip-next'></i>&nbsp;
+			</div>
+
+			<div class="more_controls">
+				
+				<i  id="shuffle" class='bx bx-shuffle'></i>
+				<i id="repeat" class='bx bx-repeat'></i>
+				<i class='bx bxs-cog' ></i>
+				<i  id="platlist_icon" class='bx bxs-playlist'></i>
+			</div>
+		</div>
+		<!---end player body -->
+         <div class="music_list">
+			<div class="header">
+			<div id="row">
+				<i class='bx bxs-playlist'></i>
+				<span>Music List</span>
+			</div>
+			<i id="close" class='bx bx-x'></i>
+		</div>
+		<!--end header -->
+		<ul>
+			<li>
+				<div class="row">
+					<span>Song Title 1</span>
+					<p>Artist1 [NST] </p>
+				</div>
+				<span class="audio_duration">0 : 37</span>
+			</li>
+			<li>
+				<div class="row">
+					<span>Song Title 2</span>
+					<p>Artist2 [NST] </p>
+				</div>
+				<span class="audio_duration">2:32</span>
+			</li>
+			<li>
+				<div class="row">
+					<span>Song Title 3</span>
+					<p>Artist3 [NST] </p>
+				</div>
+				<span class="audio_duration">1:45</span>
+			</li>
+			<li>
+				<div class="row">
+					<span>Song Title 4</span>
+					<p>Artist4 [NST] </p>
+				</div>
+				<span class="audio_duration">1:45</span>
+			</li>
+			<li>
+				<div class="row">
+					<span>Song Title 5</span>
+					<p>Artist5 [NST] </p>
+				</div>
+				<span class="audio_duration">1:45</span>
+			</li>
+			<li>
+				<div class="row">
+					<span>Song Title 6</span>
+					<p>Artist6 [NST] </p>
+				</div>
+				<span class="audio_duration">1:45</span>
+			</li>
+		 </ul>
+		 </div>
+		 <!---music list -->
+	
+	</div>
+	<script src="music_list.js"></script>
+	<script src="main.js"></script>
+</mian>
+
+</body>
+</html>
